@@ -213,9 +213,16 @@ const filterTemples = (temples) => {
 };
 
 // Event Listener: filterTemples Element change
+// document.getElementById("filtered").addEventListener("change", () => {
+//     filterTemples(templeList);
+// });
+
+// Event Listener: filterTemples Element change
 document.getElementById("filtered").addEventListener("change", () => {
+    // Call sortBy function when the selection changes
+    sortBy(templeList, "templeName");
+    // Then, call filterTemples to update the display based on the sorted data
     filterTemples(templeList);
 });
-
 // Initial call to fetch and display temples
 getTemples();
