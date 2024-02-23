@@ -24,3 +24,12 @@ li {
     text-decoration: line-through;
     color: #888;
 }
+footer {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
